@@ -15,6 +15,8 @@
                     ->prependStylesheet($this->basePath() . '/css/main.css')
                     ->prependStylesheet($this->basePath() . '/css/style.css')
                     ->prependStylesheet($this->basePath() . '/css/supersized.css')
+                    ->prependStylesheet($this->basePath() . '/css/jquery.bxslider.css')
+                    ->prependStylesheet($this->basePath() . '/css/animate.css')
 
                     //->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
                     //->prependStylesheet($this->basePath() . '/css/bootstrap.min.css') ?>
@@ -35,7 +37,7 @@
                 <header>
                     <div class="shadowblock">
                         <div class="logobar">
-                            <a href="/"><img src="img/Logo.png" alt="GameCentral"></a>
+                            <a href="/"><img src="<?php echo $this->basePath('img/Logo.png') ?>" alt="GameCentral"></a>
                             <div class="social">
                                 <a href="#" class="fb transition animated fadeInDown"></a>
                                 <a href="#" class="tw transition animated fadeInDown"></a>
@@ -56,7 +58,7 @@
                     <div class="mist"></div>
                 </header>
                 <div id="content">
-                    <?php //echo $this->content; ?>
+                    <?php echo $this->content; ?>
                 </div>
             </div>
         </div>

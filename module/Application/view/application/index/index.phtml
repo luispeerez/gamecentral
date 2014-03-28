@@ -1,44 +1,59 @@
-<div class="jumbotron">
-    <h1><?php echo sprintf($this->translate('Welcome to %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
-    <p><?php echo sprintf($this->translate('Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.'), '<a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">', '</a>', \Zend\Version\Version::VERSION) ?></p>
-    <p><a class="btn btn-success btn-lg" href="https://github.com/zendframework/zf2" target="_blank"><?php echo $this->translate('Fork Zend Framework 2 on GitHub') ?> &raquo;</a></p>
-</div>
-
-<div class="row">
-
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Follow Development') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!'), '<a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">', '</a>', '<a href="http://framework.zend.com/zf2/blog">', '</a>', '<a href="https://github.com/zendframework/zf2/issues">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://framework.zend.com/zf2" target="_blank"><?php echo $this->translate('ZF2 Development Portal') ?> &raquo;</a></p>
-            </div>
+    <div class="container home">
+        <div class="column left">   
+            <section class="message card">
+                <div class="imagepost"><div class="overlay"></div><img src="<?php echo('img/tienda_atras.png') ?>" alt="Grand Theft Auto V"></div><div class="clear"></div>
+                <section class="singlepost home">
+                    <div class="postTitle">
+                        <h1>¿Quieres tener tu propia tienda de videojuegos?</h1>
+                    </div>
+                    <p>Conoce nuestro novedoso sistema de trabajo y forma parte de la industria de los  video juegos. Tenemos todo lo que necesitas. Muchas gracias  a nuestro amigo MYM ALK4PON3 por el apoyo.</p>
+                    <div class="videobox"><div class="video_container"><iframe width="560" height="315" src="//www.youtube.com/embed/L-qgVMH_P0g" frameborder="0" allowfullscreen></iframe></div></div>
+                    <div class="clear"></div>
+                </section>
+            </section>
+            <section class="notices">
+                <div class="box card">
+                    <div class="imagepost"><div class="overlay"></div><img src="<?php echo('img/titan.png') ?>" alt="Grand Theft Auto V"></div>
+                    <section class="singlepost">
+                        <div class="postTitle">
+                            <h2>Noticias</h2>
+                            <h1>La Xbox One con diseño de Titanfall no se comercializará.</h1>
+                            <p>La Xbox One con diseño de Titanfall que un supuesto trabajador de Microsoft filtró, finalmente no se comercializara.Resulta que esta consola no estaba destinada al público, sino a los creadores del juego.</p>
+                            <p>Los chicos de Respawn Entertainment, creadores de Titanfall, ya tienen esta edición limitada de la consola, que como decimos, no se venderá, sino que se entregará exclusivamente a aquellos que trabajaron para hacer realidad este título.
+                                Muchos quisieramos tener una en nuestras manos.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="box card">
+                    <div class="imagepost"><div class="overlay"></div><img src="<?php echo('img/castle.png') ?>" alt="Grand Theft Auto V"></div>
+                    <section class="singlepost">
+                        <div class="postTitle">
+                            <h2>Noticias</h2>
+                            <h1>Se viene primer DLC de Castlevania: Lords of Shadow 2.</h1>
+                        </div>
+                        <p>Konami confirma el primer DLC donde podremos jugar con Alucard en este primer contenido descargable de Castlevania: Lords of Shadow 2.</p>
+                        <p>Este DLC,sera llamado "Revelations", se pondrá a la venta el 25 de marzo y contára lo que ocurrió antes del despertar de Gabriel en el capítulo final de la trilogía.</p>
+                        <p>Alucard tendrá sus propios poderes, de forma que podrá transformarse en lobo, en una bandada de murciélagos e incluso retroceder el tiempo.</p>
+                    </section>
+                </div>
+                <div class="clear"></div>
+            </section>
         </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Discover Modules') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
-            </div>
+        <div class="column right">
+            <section class="gallery card">
+                <h1>Galeria</h1><hr>
+                <ul class="bxslider">
+                  <li><img src="<?php echo('img/slide1.jpg') ?>" alt="slide" /></li>
+                  <li><img src="<?php echo('img/slide2.jpg') ?>" alt="slide1" /></li>
+                  <li><img src="<?php echo('img/slide3.jpg') ?>" alt="slide" /></li>
+                  <li><img src="<?php echo('img/slide4.jpg') ?>" alt="slide" /></li>
+                </ul>
+            </section>
+            <section class="twitterfeed card">
+                <a class="twitter-timeline" href="https://twitter.com/GameCentral_" data-widget-id="443082860828717056">Tweets por @GameCentral_</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </section>
         </div>
+        <div class="clear"></div>
     </div>
-
-    <div class="col-md-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title"><?php echo $this->translate('Help &amp; Support') ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
-                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a></p>
-            </div>
-        </div>
-    </div>
-</div>

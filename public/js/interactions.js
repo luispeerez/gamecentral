@@ -15,7 +15,7 @@ $(window).resize(function(){
 	screenSize = $(window).width();
 });
 
-/*
+
 $(window).scroll(function(){
 	windowOffset 	= $(window).scrollTop();
 	containeroffset = $('#content .container').offset().top;
@@ -35,5 +35,5 @@ $(window).scroll(function(){
 
 	}
 });
-*/
+
 

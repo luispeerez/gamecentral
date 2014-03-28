@@ -15,12 +15,12 @@ return array(
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
             // using the path /application/:controller/:action
-            'directorio' => array( //poner los nombres de nuestro modulo
+            'review' => array( //poner los nombres de nuestro modulo
                 'type'    => 'Literal',
                 'options' => array(
-                    'route'    => '/directorio',
+                    'route'    => '/review',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'Directorio\Controller',
+                        '__NAMESPACE__' => 'Review\Controller',
                         'controller'    => 'Index',
                         'action'        => 'index',
                     ),
@@ -46,7 +46,7 @@ return array(
     //Se remueve la configuracion del service manager y del translator
     'controllers' => array(
         'invokables' => array(//Cambiar al nombre del modulo
-            'Directorio\Controller\Index' => 'Directorio\Controller\IndexController'
+            'Review\Controller\Index' => 'Review\Controller\IndexController'
         ),
     ),
     'view_manager' => array(
@@ -55,7 +55,7 @@ return array(
         //que no choque con el template_path de otros modulos
         //Se debe crear una llavae con el nombre del modulo
         'template_path_stack' => array(
-            'directorio' => __DIR__ . '/../view',
+            'review' => __DIR__ . '/../view',
         ),
     ),
     'doctrine' => array(

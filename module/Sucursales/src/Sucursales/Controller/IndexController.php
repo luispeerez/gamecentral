@@ -1,5 +1,5 @@
 <?php 
-namespace Directorio\Controller;
+namespace Sucursales\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
