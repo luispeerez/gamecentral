@@ -49,14 +49,23 @@
                     <nav class="animated">
                         <ul>
                         <li><a href="/">Inicio</a></li>
-                        <li><a href="/review.php">Reseñas</a></li>
+                        <li><a href="/review">Reseñas</a></li>
                         <li><a href="#">Catalogo</a></li>
-                        <li><a href="/sucursales.php">Sucursales</a></li>
-                        <li><a href="/contacto.php">Contacto</a></li>                           
+                        <li><a href="/sucursales">Sucursales</a></li>
+                        <li><a href="/contacto">Contacto</a></li>                           
                         </ul>
                     </nav>
                     <div class="mist"></div>
                 </header>
+                <div id="mobileMenu">
+                    <select name="#" id="#">
+                        <option value="/">Inicio</option>
+                        <option value="/review">Reseñas</option>
+                        <option value="/">Catalogo</option>
+                        <option value="/contacto">Contacto</option>
+
+                    </select>
+                </div>
                 <div id="content">
                     <?php echo $this->content; ?>
                 </div>

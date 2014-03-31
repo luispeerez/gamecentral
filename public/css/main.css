@@ -69,7 +69,8 @@ header nav li{display: inline-block;width: 14%;text-align: center;}
 header nav.scrolled li{border-bottom: 3px solid #CCCCCC}
 header nav.scrolled li:hover{border-bottom: 3px solid #FF4343}
 header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-height: 41px;}
-
+#mobileMenu{display: none;position: absolute;top: 114px;width: 100%}
+#mobileMenu select{display: block;margin: 0 auto;padding: 4px 0;width: 90%}
 
 /*Global*/
 	/*Contenedor video responsive*/
@@ -96,6 +97,9 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container .singlepost .postTitle h1{background: url(../img/barra.png) no-repeat left 48px;font-size: 34px;font-weight: 900;margin-top: -18px}
 #content .container .singlepost .postTitle h2{font-size: 18px}
 #content .container .singlepost p{text-align: justify;}
+#content .container .fb-comments{margin-top:2em;width: 100%!important}
+#content .container .fb-comments span{width: 100%!important}
+#content .container .fb-comments span iframe{width: 100%!important}
 
 
 /*Home*/
@@ -120,7 +124,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 #content .container.home .gallery{margin-bottom: 15px;padding: 6px}
 #content .container.home .gallery .bx-wrapper{z-index: 1}
 #content .container.home .gallery img{;margin: 0 auto}
-#content .container.home .twitterfeed{padding: 6px}
+#content .container.home .twitterfeed{padding: 6px;text-align: center;}
 
 /*Review o noticia*/
 #content .container .review{padding: 15px}
@@ -159,7 +163,7 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 
 /*Responsive Layout*/
 @media all and (max-width: 979px){
-	#content{padding: 107px 12px 0}
+	#content{padding: 150px 12px 0}
 	#content .container .postTitle{margin-top: -60px}
 	aside , header nav span.blacksquare{display: none;}
 }
@@ -171,12 +175,22 @@ header nav a{color:#fff;font-size: 20px;font-weight: 300;margin: 0px 10px;line-h
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-
+	header nav{display: none;}
+	#mobileMenu{display: block;}
+	#content .container.home .column{float: none;width: 100%!important}
+	#content .container.home .column.right{margin: 10px 0 0!important}
+	#content .container .sucursal .map{float: none;margin-top: 50px;width: 95%;}
+	#content .container .sucursal .text{border: 0!important;text-align: left!important;}
+	#content .container .sucursal.odd h2{background-position-x:inherit;}
+	#footer .column{display: block!important;float: none!important;padding: 5px 0;text-align: center!important;width: 100%!important;}
 }
 
+@media (max-width: 560px){
+	#content .container.home .notices .box{float: none;margin: 5px 0!important;width: 96%!important}
+}
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	#footer .column{float: none!important;padding: 6px;text-align: center!important;width: auto}
+	header .shadowblock .logobar .social{display: none!important;}
 }
 
 

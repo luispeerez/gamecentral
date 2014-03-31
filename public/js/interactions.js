@@ -36,4 +36,8 @@ $(window).scroll(function(){
 	}
 });
 
+$("#mobileMenu  select").change(function() {
+  window.location = $(this).find("option:selected").val();
+});
+
 
